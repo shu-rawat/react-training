@@ -224,10 +224,11 @@ function joiner(token, ...rest){
 console.log(joiner('-',1,2,3,4,5));
 //
 function createList(type='u'){
-    return `${type =='o'?'<ol>':'ul'}
+    const tag = type == 'o'?'ul':'ol';
+    return `<${tag}>
             <li></li>
             <li></li>
-        ${type =='o'?'</ol>':'/ul'}            
+        </${tag}>            
     `
 }
 
