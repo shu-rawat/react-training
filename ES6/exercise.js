@@ -117,7 +117,7 @@ console.log( text );
 
 //Exercise 10
 function exceptFirst([,...rest]){
-    return [...rest];
+    return rest;
 }
 
 console.log(exceptFirst([1,2,3,4,5,6]));
