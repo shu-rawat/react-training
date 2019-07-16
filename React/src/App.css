@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+ul{
+    list-style: none;
+}
 .backdrop{
     background:rgba(0,0,0,0.6);
     display: flex;
@@ -26,4 +29,15 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+.products-list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.product-wrapper{
+    width:300px;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+    margin: 1rem;
 }

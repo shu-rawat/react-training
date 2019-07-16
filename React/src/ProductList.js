@@ -17,7 +17,7 @@ const ProductList = (props)=>{
             </li>
         ));
             
-        productList = <ul>{productList}</ul>        
+        productList = <ul className="products-list">{productList}</ul>        
     }
     else{
         productList = <div>
