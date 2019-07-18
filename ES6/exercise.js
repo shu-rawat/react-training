@@ -180,7 +180,7 @@ console.log(allEles.slice(Math.max(allEles.length - 4, 1)));
 
 //Excercise 16
 
-function maxCommon(str1, str2, head1, head2, highest){
+function maxCommon(str1, str2, head1=0, head2=0, highest){
     if(!str1[head1]){
         return highest;
     }
