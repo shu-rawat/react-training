@@ -20,7 +20,7 @@ class SearchHeader extends React.Component {
     render() {
         return (
             <header>
-                <form>
+                <form onSubmit={(e)=>{e.preventDefault()}}> 
                     <input type="text" value={this.state.searchTerm} onChange={this.onSearchChange}/>
                     <button onClick={this.onUpdateSearchTerm}>Search</button>
                 </form>
