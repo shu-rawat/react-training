@@ -20,8 +20,10 @@ class SearchHeader extends React.Component {
     render() {
         return (
             <header>
-                <input type="text" value={this.state.searchTerm} onChange={this.onSearchChange}/>
-                <button onClick={this.onUpdateSearchTerm}>Search</button>
+                <form>
+                    <input type="text" value={this.state.searchTerm} onChange={this.onSearchChange}/>
+                    <button onClick={this.onUpdateSearchTerm}>Search</button>
+                </form>
             </header>
         )
     }
